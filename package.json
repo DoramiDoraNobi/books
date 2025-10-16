@@ -1,0 +1,26 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "A RESTful API for managing books using PostgreSQL",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "migrate": "psql -U <username> -d books -f migrations/001_create_books_table.sql"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "API",
+    "books",
+    "PostgreSQL",
+    "Node.js"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

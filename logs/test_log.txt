@@ -1,0 +1,1 @@
+log test $(Get-Date -Format o)
